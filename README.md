@@ -1,9 +1,8 @@
 # Leetcode-Problems
-### Sheet followed:
-[Leetcode Questions](https://docs.google.com/spreadsheets/d/1d4vtAjLfbr4vNIJTInh7IsMcym8GDNT4/edit?usp=sharing&ouid=109023606663997444374&rtpof=true&sd=true)
+This repository is a collection of python solutions to leetcode problems
 
 
-### You can find me here 
+#### You can find me here 
 <code>
     <a href="https://www.linkedin.com/in/khushikhan/" title="LinkedIn Profile"><img width="22" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg"> LinkedIn</a></code>
 <code>
@@ -13,5 +12,5 @@
 <br />
 
 
-### Credits:
+#### Credits:
 Created using [LeetHub](https://github.com/QasimWani/LeetHub).
