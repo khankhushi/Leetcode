@@ -1,0 +1,1 @@
+Try coming inwards from both ends and not using reverse() or slicing operator
