@@ -11,11 +11,8 @@ class Solution:
         nonZeroCount = 0
         for i in range(len(nums)):
             if nums[i] != 0:
-                nums[nonZeroCount] = nums[i]
-                nonZeroCount += 1
-        for i in range(nonZeroCount, len(nums)):
-            nums[i] = 0
-        return nums
+               nums[nonZeroCount], nums[i] = nums[i], nums[nonZeroCount]
+               nonZeroCount += 1
             
             
             
