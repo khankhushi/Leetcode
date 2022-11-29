@@ -21,7 +21,7 @@ class RandomizedSet:
         self.dataMap[last_elem] = index_elem_remove
         self.data[index_elem_remove] = last_elem
         
-        self.data[-1] = val
+        # self.data[-1] = val
         self.data.pop()
         self.dataMap.pop(val)
         
