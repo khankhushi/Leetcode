@@ -1,6 +1,6 @@
 class Solution:
     def truncateSentence(self, s: str, k: int) -> str:
-        s = " ".join(list(s.split())[:k])
-        return s
-        
-        
+        li = list(s.split(" "))
+        string = " "
+        return string.join(li[:k])
+         
