@@ -1,6 +1,6 @@
 class Solution:
     def minimumRounds(self, tasks: List[int]) -> int:
-        tasks.sort()
+        # tasks.sort()
         cnt = Counter(tasks)
         minm = 0
         # for i in range(len(tasks)):
@@ -17,23 +17,4 @@ class Solution:
                 minm += countt//3 + 1
         return minm
                 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-#         if (len(tasks)%5 == 0):
-#             return len(tasks)//5
-#         else:
-#             return "-1"
-        
+          
