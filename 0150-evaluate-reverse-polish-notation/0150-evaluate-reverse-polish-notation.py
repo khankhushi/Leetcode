@@ -1,24 +1,18 @@
-#?????
 class Solution:
-    def __init__(self):
-        self.operators = {
-            '+': lambda y, x: x + y,
-            '-': lambda y, x: x - y,
-            '*': lambda y, x: x * y,
-            '/': lambda y, x: int(operator.truediv(x, y))
-        }
-
-    def evalRPN(self, tokens):
-        if not tokens:
-            return 0
-
+    def evalRPN(self, tokens: List[str]) -> int:
         stack = []
-
-        for token in tokens:
-            if token in self.operators:
-                stack.append(self.operators[token](stack.pop(), stack.pop()))
+        for t in tokens:
+            if t not in "+-/*":
+                stack.append(t)
             else:
-                stack.append(int(token))
-
-        return stack[0]
-        
+                right,left = float(stack.pop()), float(stack.pop())
+                if t == "+":
+                    stack.append(left+right)
+                elif t == "-":
+                    stack.append(left-right)
+                elif t == "*":
+                    stack.append(left*right)
+                else:
+                    stack.append(float(int(left/right)))
+        return int(stack.pop())
+                
