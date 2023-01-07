@@ -5,12 +5,13 @@ class Solution:
             return -1
         
         for i in range(len(gas)):
-            trip += gas[i]- cost[i] 
+            # trip += gas[i]- cost[i] 
             tank += gas[i]- cost[i]
             if tank < 0:
                 start = i+1
                 tank = 0
-        return start if trip >= 0 else -1
+        return start 
+    # if trip >= 0 else -1
 
 
 
