@@ -5,11 +5,11 @@ class Solution:
         #              return True
         cnt = 0
         st = set(sentence)
-        for i in st:
-            if ord(i) in range(97,123):
-                cnt += 1
+#         for i in st:
+#             if ord(i) in range(97,123):
+#                 cnt += 1
                 
-        if cnt == 26:
+        if len(st) == 26:
             return True
         else:
             return False
