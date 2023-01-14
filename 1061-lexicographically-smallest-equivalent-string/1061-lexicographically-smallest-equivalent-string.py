@@ -3,7 +3,7 @@ class Solution:
         lookup = defaultdict(set)
         for s in string.ascii_lowercase:
             lookup[s].add(s)
-
+        print(lookup)
         for i in range(len(s1)):
             temp = set()
             del_list = []
@@ -15,8 +15,8 @@ class Solution:
                 del lookup[key]
             if temp:
                 lookup[min(temp)].update(temp)
-
-
+        print(lookup)
+        print(temp)
         res = [''] * len(baseStr)
         for i in range(len(baseStr)):
             for key, value in lookup.items():
